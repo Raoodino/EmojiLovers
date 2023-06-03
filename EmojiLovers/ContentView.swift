@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//<<<<<<< HEAD
 enum Emoji: String, CaseIterable {
     case 😄, 😆, 😅, 😫, 😡
 }
@@ -35,6 +36,19 @@ struct ContentView: View {
     }
 }
  
+//=======
+struct ContentView: View {
+    var body: some View {
+        VStack {
+            Image(systemName: "globe")
+                .imageScale(.large)
+                .foregroundColor(.accentColor)
+            Text("Hello, world!")
+        }
+        .padding()
+    }
+}
+//>>>>>>> 1bcd3734eb46270647aa900d31833504b0937da1
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
